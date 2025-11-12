@@ -67,7 +67,8 @@ export async function execute(interaction, client) {
     .setColor(0xf77f00) // Arc-Raiders amber / orange
     .setAuthor({
       name: "ARC RAIDERS — Fireteam Signal",
-      iconURL: "https://yourcdnlink.com/arc-logo.png", // replace with your logo URL
+      iconURL:
+        "https://github.com/user-attachments/assets/85289391-d438-4a73-8a9f-3f4847569fcd", // replace with your logo URL
     })
     .setTitle(`🛰️ ${name}`)
     .setDescription(desc || "*No mission details transmitted.*")
@@ -77,22 +78,26 @@ export async function execute(interaction, client) {
     })
     .setFooter({
       text: `Slots Engaged: 1/${max}`,
-      iconURL: "https://yourcdnlink.com/arc-logo.png", // optional same logo
+      iconURL:
+        "https://github.com/user-attachments/assets/85289391-d438-4a73-8a9f-3f4847569fcd", // optional same logo
     })
     .setTimestamp();
 
   const row = new ActionRowBuilder().addComponents(
     new ButtonBuilder()
       .setCustomId("join")
-      .setLabel("Join")
+      .setLabel("Deploy")
+      .setEmoji("🚀")
       .setStyle(ButtonStyle.Success),
     new ButtonBuilder()
       .setCustomId("leave")
-      .setLabel("Leave")
+      .setLabel("Stand Down")
+      .setEmoji("🛑")
       .setStyle(ButtonStyle.Secondary),
     new ButtonBuilder()
       .setCustomId("close")
-      .setLabel("Close")
+      .setLabel("Abort Mission")
+      .setEmoji("⚠️")
       .setStyle(ButtonStyle.Danger)
   );
 
