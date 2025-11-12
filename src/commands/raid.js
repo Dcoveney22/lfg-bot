@@ -68,7 +68,7 @@ export async function execute(interaction, client) {
     .setAuthor({
       name: "ARC RAIDERS — Fireteam Signal",
       iconURL:
-        "https://raw.githubusercontent.com/Dcoveney22/lfg-bot/refs/heads/main/src/commands/assets/c7eabd50-1256-4af6-83cc-9e364a5e19ce.png?token=GHSAT0AAAAAADNGLW6XIXWECGEEOQKAPFLG2IUP5CQ", // replace with your logo URL
+        "https://raw.githubusercontent.com/Dcoveney22/lfg-bot/refs/heads/main/src/commands/assets/ChatGPT%20Image%20Nov%2012%2C%202025%2C%2012_53_09%20PM.png?token=GHSAT0AAAAAADNGLW6WC6PA4WLXGD5ORG6Q2IUQUNQ", // replace with your logo URL
     })
     .setTitle(`🛰️ ${name}`)
     .setDescription(desc || "*No mission details transmitted.*")
@@ -79,7 +79,7 @@ export async function execute(interaction, client) {
     .setFooter({
       text: `Slots Engaged: 1/${max}`,
       iconURL:
-        "https://raw.githubusercontent.com/Dcoveney22/lfg-bot/refs/heads/main/src/commands/assets/c7eabd50-1256-4af6-83cc-9e364a5e19ce.png?token=GHSAT0AAAAAADNGLW6XIXWECGEEOQKAPFLG2IUP5CQ", // optional same logo
+        "https://raw.githubusercontent.com/Dcoveney22/lfg-bot/refs/heads/main/src/commands/assets/ChatGPT%20Image%20Nov%2012%2C%202025%2C%2012_53_09%20PM.png?token=GHSAT0AAAAAADNGLW6WC6PA4WLXGD5ORG6Q2IUQUNQ", // optional same logo
     })
     .setTimestamp();
 
