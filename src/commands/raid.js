@@ -26,7 +26,11 @@ export const data = new SlashCommandBuilder()
         o
           .setName("slots")
           .setDescription("Squad size including you")
-          .addChoices({ name: "1", value: 1 }, { name: "2", value: 2 })
+          .addChoices(
+            { name: "1", value: 1 },
+            { name: "2", value: 2 },
+            { name: "3", value: 3 }
+          )
           .setRequired(true)
       )
       // optional after
@@ -34,7 +38,7 @@ export const data = new SlashCommandBuilder()
         o.setName("description").setDescription("Brief objective / notes")
       )
       .addRoleOption((o) =>
-        o.setName("ping1").setDescription("Ping role 1 (timezone / region)")
+        o.setName("ping1").setDescription("Ping role 1 (timezone @TZ / region)")
       )
       .addRoleOption((o) =>
         o.setName("ping2").setDescription("Ping role 2 (optional)")
